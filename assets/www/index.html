@@ -1,4 +1,40 @@
 <!DOCTYPE html>
+<html>
+<head>
+<title>Media Example</title>
+<!-- http://178.18.137.245 -->
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="shoutcast.js"></script>
+</head>
+<body>
+	<div style="text-align: center;">
+		<h1>Shoutcast Cordova</h1>
+		<form>
+			URL: <input type="text" id="inputUrl" name="inputUrl" value="http://" onchange="changeUrl(document.getElemetById('inputUrl').value)">
+			<br>
+		</form>
+		<button type="button" onclick="playAudio(url);" >Play</button>
+		<button type="button" onclick="pauseAudio();" >Pause</button>
+		<button type="button" onclick="stopAudio();" >Stop</button>
+		<p id="audio_position">Position: </p>
+		
+		<button type="button" onclick="changeUrl('http://178.18.137.245')">http://178.18.137.245</button>
+		<br>
+		<button type="button" onclick="changeUrl('http://50.117.115.210')">http://50.117.115.210</button>
+		<br>
+		<button type="button" onclick="changeUrl('http://thegrid.worldblu.com')">http://thegrid.worldblu.com</button>
+		<br>
+		<button type="button" onclick="changeUrl('http://he-srv1.defjay.com')">http://he-srv1.defjay.com</button>
+		<br>
+		<button type="button" onclick="changeUrl('http://stream-38.shoutcast.com:80/chillout_difm_mp3_96kbps')">http://stream-38.shoutcast.com:80/chillout_difm_mp3_96kbps</button>
+		<br>
+		<button type="button" onclick="changeUrl('http://pub4.di.fm:80/di_chillout_aacplus')">http://pub4.di.fm:80/di_chillout_aacplus</button>
+	</div>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
 <!--
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
@@ -17,6 +53,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
+<!-- 
 <html>
     <head>
         <meta charset="utf-8" />
@@ -33,7 +70,7 @@
                 <p class="event received">Device is Ready</p>
             </div>
 			<div>
-				<a href="shoutcast.html" >shoutcast</a>
+				<a href="shoutcast.html" ><h1>shoutcast</h1></a>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
@@ -43,3 +80,4 @@
         </script>
     </body>
 </html>
+ -->
